@@ -37,3 +37,8 @@ Not for full functionality, no. There are two main features of the power button:
 The **wake functionality** requires the SCL pin, Pin 5 (GPIO 3). There's simply no other pin that can "hardware" wake the Pi from a zero-power state. If you don't care about turning the Pi back _on_ using the power button, you could use a different GPIO pin for the **shutdown functionality** and still have a working shutdown button. Then, to turn the Pi back on, you'll just need to disconnect and reconnect power (or use a cord with a physical switch in it) to "wake" the Pi.
 
 Of course, for the GND connection, you can use [any other ground pin you want](https://pinout.xyz/).
+
+## Attribution
+
+Forked from [Nizhile/pi-power-button](https://github.com/Nizhile/pi-power-button) to implement [longpress](https://github.com/Nizhile/pi-power-button/tree/gpiozero_long_press).
+Initially forked from [Howchoo/pi-power-button](https://github.com/Howchoo/pi-power-button).
