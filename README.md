@@ -9,6 +9,10 @@ Scripts used in our official [Raspberry Pi power button guide](https://howchoo.c
 1. Optional: Edit line 9/10 in listen-for-shutdown.py to your preferred pin (Please see "Is it possible to use another pin other than Pin 5 (GPIO 3/SCL)?" below!)
 1. Run the setup script: `./pi-power-button/script/install`
 
+## Usage
+
+Press and hold the button for 3 seconds to safely shut down the raspberry pi.
+
 ## Uninstallation
 
 If you need to uninstall the power button script in order to use GPIO3 for another project or something:
