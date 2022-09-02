@@ -1,0 +1,13 @@
+#! /bin/sh
+
+set -e
+
+cd "$(dirname "$0")/.."
+
+sudo update-rc.d listen-for-shutdown.sh remove
+sudo /etc/init.d/listen-for-shutdown.sh stop
+echo "[✓] Stopping shutdown listener\n"
+
+sudo rm -f /usr/local/bin/listen-for-shutdown.py 
+sudo rm -f /etc/init.d/listen-for-shutdown.sh 
+echo "[✓] Uninstalling shutdown listener\n"
