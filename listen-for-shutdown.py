@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 
 from gpiozero import Button
+from signal import pause
 import subprocess
 
 def longpress():
